@@ -1,0 +1,16 @@
+name: CI/CD Experiment1
+
+on:
+  push:
+    branches: [ "master" ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+
+
+    - name: Echo Hello World
+      run: echo "Hello World!"
+      
